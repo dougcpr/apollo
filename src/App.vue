@@ -4,23 +4,24 @@
       <router-view/>
 </template>
 
+
 <script>
-export default {
-  data () {
-    return {
-      clipped: false,
-      drawer: true,
-      fixed: false,
-      items: [{
-        icon: 'bubble_chart',
-        title: 'Inspire'
-      }],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: 'Vuetify.js'
-    }
-  },
-  name: 'App'
-}
+  // Vue Imports
+  import Vue from 'vue'
+  import { Component } from 'vue-property-decorator'
+
+  @Component({})
+  export default class App extends Vue {
+    // ***************** Variable Declaration Block *****************
+
+    // ***************** Property Block *****************************
+
+    // ***************** Computed Properties Block ******************
+
+    // ***************** Methods Block ******************************
+
+    // ***************** Lifecycle Hook Block ***********************
+
+    // ***************** Watchers Block *****************************
+  }
 </script>

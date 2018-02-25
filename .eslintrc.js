@@ -15,6 +15,12 @@ module.exports = {
   plugins: [
     'html'
   ],
+  validate: [
+    "javascript",
+    "javascriptreact",
+    "vue",
+    "html"
+  ],
   // add your custom rules here
   rules: {
     // allow async-await
