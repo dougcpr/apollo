@@ -6,7 +6,7 @@
         blockquote First, solve the problem. Then, write the code.
           footer
             small
-              em cJohn Johnson
+              em John Johnson
 </template>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
