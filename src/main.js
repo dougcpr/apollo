@@ -6,8 +6,10 @@ import router from './router'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 
+// Firebase configuration and initializaion
+import Vuefire from 'vuefire'
+Vue.use(Vuefire)
 Vue.use(Vuetify)
-
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
