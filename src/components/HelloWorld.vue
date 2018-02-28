@@ -64,13 +64,4 @@
   }
 </script>
 <style scoped>
-  img.icon {
-    height: 20px;
-    margin-bottom: 3px;
-  }
-  div.skill-title {
-    font-size: 16px;
-    font-weight: 300;
-    text-transform: uppercase;
-  }
 </style>
