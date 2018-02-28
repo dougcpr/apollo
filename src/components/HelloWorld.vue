@@ -1,6 +1,38 @@
 <template lang="pug">
   v-container(fluid)
-    skill-bars
+    //- First Row 
+    v-layout(row, wrap)
+      v-flex(d-flex, xs12, sm6, md2)
+      v-flex(d-flex xs12, sm6, md3)
+        v-card(color="black", height="200")
+      v-flex(d-flex xs12, sm6, md5)
+        v-card(color="purple", height="200") 
+      v-flex(d-flex, xs12, sm6, md2)
+    //- Second Row 
+    v-layout(row, wrap)
+      v-flex(d-flex, xs12, sm6, md2)
+      v-flex(d-flex xs12, sm6, md3)
+        v-card(color="blue", height="200")
+      v-flex(d-flex xs12, sm6, md5)
+        v-card(color="grey", height="200") 
+      v-flex(d-flex, xs12, sm6, md2)
+    //- Third Row
+    v-layout(row, wrap)
+      v-flex(d-flex, xs12, sm6, md2)
+      v-flex(d-flex xs12, sm6, md3)
+        v-card(height="200")
+        skill-bars
+      v-flex(d-flex xs12, sm6, md5)
+        v-card(color="orange", height="335") 
+      v-flex(d-flex, xs12, sm6, md2)
+    //- Fourth Row
+    v-layout(row, wrap)
+      v-flex(d-flex, xs12, sm6, md2)
+      v-flex(d-flex xs12, sm6, md3)
+        v-card(color="green", height="200")
+      v-flex(d-flex xs12, sm6, md5)
+        v-card(color="black", height="200") 
+      v-flex(d-flex, xs12, sm6, md2)
 </template>
 <script>
   // Vue Imports
@@ -20,7 +52,7 @@
   })
   export default class App extends Vue {
     // ***************** Variable Declaration Block *****************
-    alphabatizedSkills = []
+
     // ***************** Property Block *****************************
 
     // ***************** Computed Properties Block ******************

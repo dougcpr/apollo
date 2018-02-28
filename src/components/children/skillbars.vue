@@ -1,10 +1,10 @@
 <template lang="pug">
   v-container(fluid)
     v-layout(v-for="skill of skills", :key="skill.name", column).py-2
-      v-flex(xs2) 
+      v-flex(xs12) 
         div.skill-title {{ skill.name }} 
           img(:src="skill.image").icon
-      v-flex(xs4)
+      v-flex(xs12)
         v-progress-linear(color="blue-grey darken-3", :height=10, :value="skill.value").ma-0
 </template>
 <script>
