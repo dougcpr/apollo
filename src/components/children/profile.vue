@@ -25,7 +25,7 @@
       profile: profileRef
     }
   })
-  export default class Header extends Vue {
+  export default class Profile extends Vue {
     // ***************** Variable Declaration Block *****************
 
     // ***************** Property Block *****************************

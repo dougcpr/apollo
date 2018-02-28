@@ -40,7 +40,7 @@
   import Vue from 'vue'
   import { Component } from 'vue-property-decorator'
   import skillBars from './children/skillbars'
-  import profile from './children/header'
+  import profile from './children/profile'
 
   @Component({
     components: {
