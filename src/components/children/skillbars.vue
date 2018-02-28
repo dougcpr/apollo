@@ -5,7 +5,7 @@
         div.skill-title {{ skill.name }} 
           img(:src="skill.image").icon
       v-flex(xs12)
-        v-progress-linear(color="blue-grey darken-3", :height=10, :value="skill.value").ma-0
+        v-progress-linear(color="light-blue darken-2", :height=10, :value="skill.value").ma-0
 </template>
 <script>
   // Vue Imports

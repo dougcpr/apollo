@@ -2,7 +2,7 @@
   v-container(fluid)
     //- First Row 
     v-layout(row, wrap)
-      v-flex(d-flex, xs12, sm6, md2)
+      v-flex(d-flex, xs12, sm6, md2, xlg4)
       v-flex(d-flex xs12, sm6, md3)
         v-card(color="black", height="200")
       v-flex(d-flex xs12, sm6, md5)
@@ -15,7 +15,8 @@
       v-flex(d-flex xs12, sm6, md3)
         v-card(color="blue", height="200")
       v-flex(d-flex xs12, sm6, md5)
-        v-card(color="grey", height="200") 
+        v-card(height="200") 
+        experience
       v-flex(d-flex, xs12, sm6, md2)
     //- Third Row
     v-layout(row, wrap)
@@ -33,7 +34,7 @@
         v-card(color="green", height="200")
       v-flex(d-flex xs12, sm6, md5)
         v-card(color="black", height="200") 
-      v-flex(d-flex, xs12, sm6, md2)
+      v-flex(d-flex, xs12, sm6, md2, xlg4)
 </template>
 <script>
   // Vue Imports
@@ -41,11 +42,13 @@
   import { Component } from 'vue-property-decorator'
   import skillBars from './children/skillbars'
   import profile from './children/profile'
+  import experience from './children/experience'
 
   @Component({
     components: {
       skillBars,
-      profile
+      profile,
+      experience
     }
   })
   export default class App extends Vue {
