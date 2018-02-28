@@ -25,7 +25,8 @@
         v-card(height="200")
         skill-bars
       v-flex(d-flex xs12, sm6, md5)
-        v-card(color="orange", height="335") 
+        v-card() 
+        education
       v-flex(d-flex, xs12, sm6, md2)
     //- Fourth Row
     v-layout(row, wrap)
@@ -43,12 +44,14 @@
   import skillBars from './children/skillbars'
   import profile from './children/profile'
   import experience from './children/experience'
+  import education from './children/education'
 
   @Component({
     components: {
       skillBars,
       profile,
-      experience
+      experience,
+      education
     }
   })
   export default class App extends Vue {

@@ -1,15 +1,15 @@
 <template lang="pug">
-  v-container(fluid).pr-0.ma-0.experience-container 2 YEARS EXPERIENCE
-    v-layout(v-for="data of experience", :key="data.role", column).py-2
+  v-container(fluid).pr-0.ma-0.education-container EDUCATION
+    v-layout(v-for="data of education", :key="data.role", column).py-2
       v-flex(xs12) 
         v-layout
-          v-card(raised).experience-card
+          v-card(raised).education-card
             v-card-title
-              v-flex(xs3).pr-5.experience-date
+              v-flex(xs3).education-date
                 div.py-2 {{ data.startYear }} - {{ data.endYear }}
-              v-flex(row, wrap)
-                div.py-2(style="font-size: 18px") {{ data.name }} 
-                div.py-2.experience-role {{ data.role }}
+              v-flex
+                div.py-2(style="font-size: 18px") {{ data.degree }} 
+                div.py-2.education-role {{ data.school }}
 
 </template>
 <script>
@@ -17,14 +17,14 @@
   import Vue from 'vue'
   import { Component } from 'vue-property-decorator'
   import { db } from '@/services/firebase'
-  let experienceRef = db.ref('experience')
+  let educationRef = db.ref('education')
 
   @Component({
     firebase: {
-      experience: experienceRef
+      education: educationRef
     }
   })
-  export default class Experience extends Vue {
+  export default class Education extends Vue {
     // ***************** Variable Declaration Block *****************
 
     // ***************** Property Block *****************************
@@ -39,22 +39,22 @@
   }
 </script>
 <style scoped>
-  .experience-card{
+  .education-card{
     width: 95%;
   }
-  .experience-container {
+  .education-container {
     background-color: #CFD8DC;
     color: #0288D1;
     text-transform: uppercase;
     font-size: 20px;
   }
-  .experience-date {
+  .education-date {
     color: #0288D1;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 500;
   }
-  .experience-role {
+  .education-role {
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 500;

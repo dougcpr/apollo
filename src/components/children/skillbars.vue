@@ -1,5 +1,5 @@
 <template lang="pug">
-  v-container(fluid).skillbar
+  v-container(fluid).skillbar SKILLS
     v-layout(v-for="skill of skills", :key="skill.name", column).py-2
       v-flex(xs12) 
         div.skill-title {{ skill.name }} 
@@ -42,9 +42,13 @@
   div.skill-title {
     font-size: 16px;
     font-weight: 300;
+    color: black;
     text-transform: uppercase;
   }
   .skillbar {
     background-color: #CFD8DC;
+    color: #0288D1;
+    text-transform: uppercase;
+    font-size: 20px;
   }
 </style>
