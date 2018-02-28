@@ -6,11 +6,11 @@
           div.py-2.ml-2(style="font-size: 18px") {{ data.name }}
         v-layout.pl-4
           v-icon(color="blue-grey darken-3").pt-1 account_circle
-          div.pt-2.ml-2 {{ data.title }}
+          div.pt-2.ml-3 {{ data.title }}
       v-flex(xs12).pt-4
         v-layout.pl-4
           v-icon(color="blue-grey darken-3") email
-          div.pt-1.ml-2 {{ data.email }}
+          div.pt-1.ml-3 {{ data.email }}
 </template>
 <script>
   // Vue Imports
@@ -43,5 +43,6 @@
     background-color: #0288D1;
     color: white;
     text-transform: uppercase;
+    font-weight: 600;
   }
 </style>

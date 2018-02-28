@@ -8,7 +8,7 @@
               v-flex(xs3).pr-5.experience-date
                 div.py-2 {{ data.startYear }} - {{ data.endYear }}
               v-flex(row, wrap)
-                div.py-2(style="font-size: 18px") {{ data.name }} 
+                div.py-2(style="font-size: 18px").experience-role {{ data.name }} 
                 div.py-2.experience-role {{ data.role }}
 
 </template>
@@ -43,10 +43,11 @@
     width: 95%;
   }
   .experience-container {
-    background-color: #CFD8DC;
+    background-color: #ECEFF1;
     color: #0288D1;
     text-transform: uppercase;
     font-size: 20px;
+    font-weight: 600;
   }
   .experience-date {
     color: #0288D1;
@@ -57,6 +58,6 @@
   .experience-role {
     text-transform: uppercase;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 400;
   }
 </style>
