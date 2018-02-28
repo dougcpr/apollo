@@ -1,5 +1,5 @@
 <template lang="pug">
-  v-container(fluid).skillbar LANGUAGES
+  v-container(fluid).skillbar SKILLS
     v-layout(v-for="skill of skills", :key="skill.name", column).py-2
       v-flex(xs12) 
         div.skill-title {{ skill.name }} 

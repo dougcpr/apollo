@@ -43,6 +43,6 @@
     background-color: #0288D1;
     color: white;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 400;
   }
 </style>
