@@ -1,26 +1,27 @@
 <template lang="pug">
   v-container(fluid)
-    skill-bars
+    v-layout(v-for="skill of skills", :key="skill.name", column).py-2
+      v-flex(xs2) 
+        div.skill-title {{ skill.name }} 
+          img(:src="skill.image").icon
+      v-flex(xs4)
+        v-progress-linear(color="blue-grey darken-3", :height=10, :value="skill.value").ma-0
 </template>
 <script>
   // Vue Imports
   import Vue from 'vue'
   import { Component } from 'vue-property-decorator'
   import { db } from '@/services/firebase'
-  import skillBars from './children/skillbars'
   let skillsRef = db.ref('Skills')
 
   @Component({
-    components: {
-      skillBars
-    },
     firebase: {
       skills: skillsRef
     }
   })
-  export default class App extends Vue {
+  export default class SkillBars extends Vue {
     // ***************** Variable Declaration Block *****************
-    alphabatizedSkills = []
+
     // ***************** Property Block *****************************
 
     // ***************** Computed Properties Block ******************
