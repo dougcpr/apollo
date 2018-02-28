@@ -6,7 +6,8 @@
       v-flex(d-flex xs12, sm6, md3)
         v-card(color="black", height="200")
       v-flex(d-flex xs12, sm6, md5)
-        v-card(color="purple", height="200") 
+        v-card(height="200") 
+        profile
       v-flex(d-flex, xs12, sm6, md2)
     //- Second Row 
     v-layout(row, wrap)
@@ -38,16 +39,13 @@
   // Vue Imports
   import Vue from 'vue'
   import { Component } from 'vue-property-decorator'
-  import { db } from '@/services/firebase'
   import skillBars from './children/skillbars'
-  let skillsRef = db.ref('Skills')
+  import profile from './children/header'
 
   @Component({
     components: {
-      skillBars
-    },
-    firebase: {
-      skills: skillsRef
+      skillBars,
+      profile
     }
   })
   export default class App extends Vue {
