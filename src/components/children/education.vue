@@ -3,7 +3,7 @@
     v-layout(v-for="data of education", :key="data.role", column).py-2
       v-flex(xs12) 
         v-layout
-          v-card(raised).education-card
+          v-card(raised,hover).education-card
             v-card-title
               v-flex(xs3).education-date
                 div.py-2 {{ data.startYear }} - {{ data.endYear }}
