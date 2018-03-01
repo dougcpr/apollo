@@ -3,7 +3,7 @@
     v-layout.py-2
       v-flex(xs12) 
         v-layout
-          v-card(raised, height="125").example-card
+          v-card(flat, height="125").example-card
             v-card-title.pt-4
               v-flex(v-for="data of media", :key="data.name", row).pl-5
                 div {{ data.name }}

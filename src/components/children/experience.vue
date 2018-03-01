@@ -3,7 +3,7 @@
     v-layout(v-for="data of experience", :key="data.role", column).py-2
       v-flex(xs12) 
         v-layout
-          v-card(raised, hover).experience-card
+          v-card(flat, hover).experience-card
             v-card-title
               v-flex(xs3).pr-5.experience-date
                 div.py-2 {{ data.startYear }} - {{ data.endYear }}
