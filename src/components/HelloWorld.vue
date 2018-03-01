@@ -1,10 +1,10 @@
 <template lang="pug">
-  v-container(fluid)
+  v-container(fluid).py-0
     //- First Row 
     v-layout(row, wrap)
       v-flex(d-flex, xs12, sm6, md2, xlg4)
       v-flex(d-flex xs12, sm6, md3)
-        v-card(color="black", height="200")
+        v-card(flat, color="blue-grey lighten-5", height="200")
       v-flex(d-flex xs12, sm6, md5)
         v-card(height="200") 
         profile
@@ -33,9 +33,10 @@
     v-layout(row, wrap)
       v-flex(d-flex, xs12, sm6, md2)
       v-flex(d-flex xs12, sm6, md3)
-        v-card(color="red", height="200")
+        v-card(flat, color="blue-grey lighten-5", height="200")
       v-flex(d-flex xs12, sm6, md5)
-        v-card(color="black", height="200") 
+        v-card(height="200") 
+        example
       v-flex(d-flex, xs12, sm6, md2, xlg4)
 </template>
 <script>
@@ -47,6 +48,7 @@
   import experience from './children/experience'
   import education from './children/education'
   import proficiencies from './children/proficiencies'
+  import example from './children/examples'
 
   @Component({
     components: {
@@ -54,7 +56,8 @@
       profile,
       experience,
       education,
-      proficiencies
+      proficiencies,
+      example
     }
   })
   export default class App extends Vue {
