@@ -5,6 +5,7 @@
       v-flex(d-flex, xs12, sm6, md2, xlg4)
       v-flex(d-flex xs12, sm6, md3)
         v-card(flat, color="blue-grey lighten-5", height="200")
+        img(src='../../static/profile.png')
       v-flex(d-flex xs12, sm6, md5)
         v-card(height="200") 
         profile
