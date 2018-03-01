@@ -14,7 +14,7 @@
       v-flex(d-flex, xs12, sm6, md2)
       v-flex(d-flex xs12, sm6, md3)
         v-card(color="blue", height="200")
-        proficiencies
+        about
       v-flex(d-flex xs12, sm6, md5)
         v-card(height="200") 
         experience
@@ -33,7 +33,8 @@
     v-layout(row, wrap)
       v-flex(d-flex, xs12, sm6, md2)
       v-flex(d-flex xs12, sm6, md3)
-        v-card(flat, color="blue-grey lighten-5", height="200")
+        v-card(flat)
+        proficiencies
       v-flex(d-flex xs12, sm6, md5)
         v-card(height="200") 
         example
@@ -49,9 +50,11 @@
   import education from './children/education'
   import proficiencies from './children/proficiencies'
   import example from './children/examples'
+  import about from './children/about'
 
   @Component({
     components: {
+      about,
       skillBars,
       profile,
       experience,
@@ -70,8 +73,7 @@
     // ***************** Methods Block ******************************
 
     // ***************** Lifecycle Hook Block ***********************
-    created () {
-    }
+
     // ***************** Watchers Block *****************************
   }
 </script>

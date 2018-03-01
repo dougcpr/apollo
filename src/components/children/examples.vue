@@ -5,9 +5,9 @@
         v-layout
           v-card(flat, hover, height="125").example-card
             v-card-title.pt-4
-              v-flex(v-for="data of media", :key="data.name", row).pl-5
+              v-flex(v-for="data of media", :key="data.name", row, v-on:click="redirectToSource(data.source)", style="cursor:pointer").pl-5
                 div {{ data.name }}
-                img.icon(:src="data.image", v-on:click="redirectToSource(data.source)").pl-4
+                img.icon(:src="data.image").pl-4
 
 </template>
 <script>
