@@ -1,5 +1,5 @@
 <template lang="pug">
-  v-container(fluid).pr-0.ma-0.example-container REPOS/MEDIA
+  v-container(fluid).pr-0.ma-0.example-container SOCIAL MEDIA
     v-layout.py-2
       v-flex(xs12) 
         v-layout
