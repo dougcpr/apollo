@@ -1,3 +1,4 @@
+Deployed: https://apollo-69860.firebaseapp.com/#/
 # playground
 
 > A Vue.js project
